@@ -1,0 +1,26 @@
+<!--mvn -Dspring-boot.repackage.skip=true help:effective-pom -Dverbose=true -Doutput=out-from-d.xml-->
+
+<plugin>
+    <groupId>org.springframework.boot</groupId>  <!-- cz.bedla.maven.sample:explicit-property-sample:0.0.1-SNAPSHOT, line 65 -->
+    <artifactId>spring-boot-maven-plugin
+    </artifactId>  <!-- cz.bedla.maven.sample:explicit-property-sample:0.0.1-SNAPSHOT, line 66 -->
+    <version>2.2.6.RELEASE
+    </version>  <!-- org.springframework.boot:spring-boot-dependencies:2.2.6.RELEASE, line 3238 -->
+    <executions>
+        <execution>
+            <id>repackage</id>  <!-- org.springframework.boot:spring-boot-starter-parent:2.2.6.RELEASE, line 150 -->
+            <goals>
+                <goal>repackage
+                </goal>  <!-- org.springframework.boot:spring-boot-starter-parent:2.2.6.RELEASE, line 152 -->
+            </goals>
+            <configuration>
+                <mainClass>${start-class}
+                </mainClass>  <!-- org.springframework.boot:spring-boot-starter-parent:2.2.6.RELEASE, line 157 -->
+            </configuration>
+        </execution>
+    </executions>
+    <configuration>
+        <mainClass>${start-class}
+        </mainClass>  <!-- org.springframework.boot:spring-boot-starter-parent:2.2.6.RELEASE, line 157 -->
+    </configuration>
+</plugin>
